@@ -486,7 +486,7 @@ body {
     margin-bottom: 4%;
     font-size: calc(12px + .290625vw); 
     font-weight: 700;
-    background-color: black;
+    background-color: rgb(167, 42, 42);
     display: flex;
     align-items: center;
     flex-direction: column;
