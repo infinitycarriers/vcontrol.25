@@ -482,7 +482,7 @@ body {
     padding: 2% 10%;
     text-decoration: none;
     font-weight: 900;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
     box-shadow: 0vw .3vw .2vw .02vw rgba(0,0,0,0.7);
     -webkit-box-shadow: 0vw .3vw 4vw .02vw rgba(0,0,0,0.7);
     -moz-box-shadow: 0vw .3vw 3vw .02vw rgba(0,0,0,0.7);
@@ -491,6 +491,12 @@ body {
 
 .getaquote h1 {
     color: black;
+}
+
+@media all and (min-width: 2500px) {
+    .getaquote {
+        margin-bottom: 4%;
+    }
 }
 
 /* FOOTER -----------------------------------------------------------------------------------------------------*/
