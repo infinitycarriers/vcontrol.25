@@ -474,137 +474,23 @@ body {
     }
 }
 
-/* SUBMIT FORM -----------------------------------------------------------------------------------------------------*/
+/* GET A QUOTE BTN -----------------------------------------------------------------------------------------------------*/
 
-.form {
-    width: 30%;
-    min-width: 320px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    font-size: calc(12px + .290625vw); 
-    font-weight: 700;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.form h2 {
-    color: rgb(214, 194, 15);
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 5%;
-}
-
-.form form {
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(11, 1fr);
-    column-gap: 3%;
-    padding: 7%;
-}
-
-.bloxer {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    grid-column: span 2;
-}
-
-.wide {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    grid-column: span 4;
-}
-
-.wierdo {
-    color: white;
-    grid-column: span 1;
-}
-
-.wierdo input {
-    width: 80%;
-}
-
-.dims {
-    margin-top: 2%;
-    width: 50%;
-}
-
-#company {
-    grid-column: 2 / 4;
-}
-
-.submit {
-    padding: 4% 10%;
+.getaquote {
     margin: 0 auto;
-    grid-column: 2 / 4;
-    margin: 5%;
-    color: black;
     background-color: rgb(214, 194, 15);
-    font-size: large;
-    font-weight: 800;
-    cursor: pointer;
+    padding: 2% 10%;
+    text-decoration: none;
+    font-weight: 900;
+    margin-bottom: 4%;
+    box-shadow: 0vw .3vw .2vw .02vw rgba(0,0,0,0.7);
+    -webkit-box-shadow: 0vw .3vw 4vw .02vw rgba(0,0,0,0.7);
+    -moz-box-shadow: 0vw .3vw 3vw .02vw rgba(0,0,0,0.7);
+    border: 3px black solid;
 }
 
-input {
-    padding: 3%;
-}
-
-textarea {
-    padding: .5% 0 5% .5%;
-}
-
-input, textarea {
+.getaquote h1 {
     color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-@media all and (max-width: 2500px) {
-    .form {
-        width: 50%;
-    }
-}
-
-@media all and (max-width: 1500px) {
-    .form {
-        width: 70%;
-    }
-}
-
-@media all and (max-width: 1050px) {
-    .form form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bloxer {
-        width: 70%;
-        margin: 3% 0;
-    }
-
-    .wierdo {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        margin: 3% 0;
-    }
-
-    .wide {
-        margin: 3% 0;
-    }
-
-    .submit {
-        padding: 4% 14%;
-        display: flex;
-        align-self: center;
-        align-items: center;
-    }
 }
 
 /* FOOTER -----------------------------------------------------------------------------------------------------*/
