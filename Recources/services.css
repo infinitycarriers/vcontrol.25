@@ -37,7 +37,7 @@ body {
     -webkit-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
     -moz-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
 
-    animation: mowgli 800ms ease-out;
+    /* animation: mowgli 800ms ease-out; */
 }
 
 @media all and (min-width: 3000px) {
@@ -63,6 +63,7 @@ body {
     justify-content: center;      
     text-decoration: none; 
     background-color: black; 
+    text-align: center;
 }
 
 .nav-btn li {
@@ -474,31 +475,6 @@ body {
     }
 }
 
-/* GET A QUOTE BTN -----------------------------------------------------------------------------------------------------*/
-
-.getaquote {
-    margin: 0 auto;
-    background-color: rgb(214, 194, 15);
-    padding: 2% 10%;
-    text-decoration: none;
-    font-weight: 900;
-    margin-bottom: 8%;
-    box-shadow: 0vw .3vw .2vw .02vw rgba(0,0,0,0.7);
-    -webkit-box-shadow: 0vw .3vw 4vw .02vw rgba(0,0,0,0.7);
-    -moz-box-shadow: 0vw .3vw 3vw .02vw rgba(0,0,0,0.7);
-    border: 3px black solid;
-}
-
-.getaquote h1 {
-    color: black;
-}
-
-@media all and (min-width: 2500px) {
-    .getaquote {
-        margin-bottom: 4%;
-    }
-}
-
 /* FOOTER -----------------------------------------------------------------------------------------------------*/
 
 .footer {
@@ -510,7 +486,7 @@ body {
     min-height: 85px;
     box-shadow: 0vw .5vw 3vw .02px rgba(0,0,0,0.7);
 
-    animation: mowgli3 800ms ease-out;
+    /* animation: mowgli3 800ms ease-out; */
 }
 
 @media all and (min-width: 3000px) {

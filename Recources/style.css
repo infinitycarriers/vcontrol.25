@@ -33,7 +33,7 @@ body {
     -webkit-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
     -moz-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
 
-    animation: mowgli 800ms ease-out;
+    /* animation: mowgli 800ms ease-out; */
 }
 
 @media all and (min-width: 3000px) {
@@ -59,7 +59,72 @@ body {
     justify-content: center;      
     text-decoration: none; 
     background-color: black; 
+    text-align: center;
 }
+
+/* DROPDOWN START --------------------------------------*/
+
+#setup {
+    font-size: calc(14px + .590625vw);    
+    text-decoration: none;
+    transition: 170ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#setup a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#setup:hover {
+    transform: scale(1.05);
+    background-color: rgb(44, 44, 44);
+}
+
+#setup:hover .dropdown {
+    scale: 1;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    background-color: rgb(44, 44, 44);
+    scale: 0;
+    width: 100%;
+}
+
+.one {
+    padding: 3% 9%;
+    text-align: left;
+}
+
+.two {
+    padding: 3% 9%;
+}
+
+.one:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+.two:hover {
+    background-color: rgb(82, 82, 82);
+}
+
+.dropdown a {
+    text-decoration: none;
+    font-size: calc(8px + .590625vw); 
+}
+
+/* DROPDOWN END --------------------------------------*/
 
 .nav-btn li {
     transition: 170ms ease-in-out;
@@ -92,6 +157,8 @@ body {
     max-height: 110px;
 } 
 
+
+
 /* IMG 1 ---------------------------------------------------------------------------------------------------------------*/
 
 .img1 {
@@ -112,7 +179,7 @@ body {
     -webkit-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
     -moz-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
 
-    animation: mowgli2 800ms ease-out;
+    /* animation: mowgli2 800ms ease-out; */
 }
 
 @media all and (min-width: 3000px) {
@@ -191,7 +258,7 @@ body {
     -moz-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
 
     transition: 170ms ease-in-out;
-    animation: mowgli2 800ms ease-out;
+    /* animation: mowgli2 800ms ease-out; */
 }
 
 .btn-withus {
@@ -247,7 +314,7 @@ body {
     -moz-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
 
     transition: 170ms ease-in-out;
-    animation: mowgli2 800ms ease-out;
+    /* animation: mowgli2 800ms ease-out; */
 }
 
 .btn-toot {
@@ -368,7 +435,7 @@ body {
     -webkit-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
     -moz-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
 
-    animation: mowgli2 800ms ease-out;
+    /* animation: mowgli2 800ms ease-out; */
 }
 
 .loads {
@@ -407,7 +474,7 @@ body {
     min-height: 85px;
     box-shadow: 0vw .5vw 3vw .02px rgba(0,0,0,0.7);
 
-    animation: mowgli3 800ms ease-out;
+    /* animation: mowgli3 800ms ease-out; */
 }
 
 @media all and (min-width: 3000px) {
