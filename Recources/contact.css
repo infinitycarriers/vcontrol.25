@@ -93,6 +93,57 @@ body {
     max-height: 110px;
 } 
 
+/* MAP ---------------------------------------------------------------------------------------------------------------*/
+
+.map {
+    width: 80%;
+    min-width: 320px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/* CONTACT US ---------------------------------------------------------------------------------------------------------------*/
+
+.contact-us {
+    width: 100%;
+    min-width: 320px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: black;
+}
+
+.contact-us h1, p {
+    margin-left: 10%;
+}
+
+.contact-us h1 {
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.exp {
+    width: 40%;
+}
+
+.support {
+    margin: 3% 0 .5% 10%;
+}
+
+.numba {
+    font-size: calc(20px + .290625vw); 
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+
+.numba p {
+    margin-bottom: 5%;
+}
 /* FOOTER -----------------------------------------------------------------------------------------------------*/
 
 .footer {
