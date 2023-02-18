@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ifs</title>
+    <link rel="shortcut icon" type="image/jpg" href="Recources/logos/IFS INC Bigger - Copy.png"/>
     <link rel="stylesheet" href="Recources/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,20 +48,21 @@
         <p class="em">Email Us</p>
         <p class="dis">dispatch@ifscarriers.com</p>
         </div>
-        <div class="right">
+        <div class="right" id="yes">
             <!-- modify this form HTML and place wherever you want your form -->
-            <form  action="https://formspree.io/f/xwkjopvq"  method="POST">
+            <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+            <form  action="https://formspree.io/f/xwkjopvq"  method="POST" target="dummyframe" id="child">
                 <label>
-                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" required id="one">
                 </label>
             <label>
-                <input type="email" name="email" placeholder="Your email" required>
+                <input type="email" name="email" placeholder="Your email" required id="two">
             </label>
             <label>
-                <textarea name="message" placeholder="Message" required></textarea>
+                <textarea name="message" placeholder="Message" required id="three"></textarea>
             </label>
             <!-- your other form fields go here -->
-            <button type="submit">Send Message</button>
+            <button type="submit" id="submit" onclick="sent()">Send Message</button>
             </form>
         </div>
     </div>
@@ -82,5 +84,27 @@
     </footer>
     
 </body>
-    
+    <script>
+        function sent() {
+            var one = document.getElementById('one')
+            if (one.value.length === 0) {
+                return;
+            }
+            if (two.value.length === 0) {
+                return;
+            }
+            if (three.value.length === 0) {
+                return;
+            }
+            setTimeout(()=> {const child = document.getElementById('child');
+            const parent = child.parentNode;
+            parent.removeChild(child);
+            const para = document.createElement("p");
+            const node = document.createTextNode("Submitted! We will contact you shortly.");
+
+            para.appendChild(node);
+            document.getElementById("yes").appendChild(para);}, 0);
+            
+        }
+    </script>
 </html>    
