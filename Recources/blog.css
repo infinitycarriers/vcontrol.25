@@ -70,7 +70,7 @@ body {
 /* DROPDOWN START --------------------------------------*/
 
 #setup {
-    font-size: calc(10px + .290625vw);   
+    font-size: calc(10px + .490625vw);   
     text-decoration: none;
     transition: 170ms ease-in-out;
     display: flex;
@@ -118,7 +118,7 @@ body {
 
 .dropdown a {
     text-decoration: none;
-    font-size: calc(10px + .290625vw); 
+    font-size: calc(10px + .490625vw); 
 }
 
 /* DROPDOWN END --------------------------------------*/
@@ -145,7 +145,7 @@ body {
     align-items: center;
     justify-content: center;      
     list-style: none;  
-    font-size: calc(10px + .290625vw);   
+    font-size: calc(10px + .490625vw);   
     font-weight:300;                                                                                                                                                                                                                                                                                                                                                                                              
 }
 
@@ -185,6 +185,7 @@ body {
     color: black;
     align-self: center;
     justify-self: center;
+    font-size: calc(25px + .890625vw);  
 }
 
 /* FOOTER -----------------------------------------------------------------------------------------------------*/
@@ -217,7 +218,7 @@ body {
 }
 
 .vanc {
-    font-size: calc(10px + .290625vw); 
+    font-size: calc(10px + .490625vw); 
     width: 100%;
     padding: 1%;
     display: flex;
@@ -229,7 +230,7 @@ body {
 .number {
     text-decoration: none;
     padding: 1%;
-    font-size: calc(9px + .290625vw);  
+    font-size: calc(9px + .490625vw);  
     width: 100%;
     display: flex;
     align-items: center;
@@ -268,6 +269,20 @@ body {
     }
     .vanc {
         font-size: calc(10px + .290625vw);  
+    }
+}
+
+@media all and (max-width: 450px) {
+    .navlist li {
+        font-size: calc(8px + .290625vw); 
+    }
+    .dropdown a {
+
+        font-size: calc(8px + .290625vw); 
+    }
+    #setup {
+        font-size: calc(8px + .290625vw); 
+
     }
 }
 

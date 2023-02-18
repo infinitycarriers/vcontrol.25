@@ -19,6 +19,11 @@ body {
     justify-content: space-between;
 }
 
+.god {
+    display: flex;
+    flex-direction: column;
+}
+
 /* NAVBAR ---------------------------------------------------------------------------------------------------------------*/
 
 .navbar {
@@ -64,7 +69,7 @@ body {
 /* DROPDOWN START --------------------------------------*/
 
 #setup {
-    font-size: calc(10px + .290625vw);   
+    font-size: calc(10px + .490625vw);   
     text-decoration: none;
     transition: 170ms ease-in-out;
     display: flex;
@@ -112,7 +117,7 @@ body {
 
 .dropdown a {
     text-decoration: none;
-    font-size: calc(10px + .290625vw); 
+    font-size: calc(10px + .490625vw); 
 }
 
 /* DROPDOWN END --------------------------------------*/
@@ -139,7 +144,7 @@ body {
     align-items: center;
     justify-content: center;      
     list-style: none;  
-    font-size: calc(10px + .290625vw);   
+    font-size: calc(10px + .490625vw);   
     font-weight:300;                                                                                                                                                                                                                                                                                                                                                                                              
 }
 
@@ -188,14 +193,14 @@ body {
 /* CONTACT US ---------------------------------------------------------------------------------------------------------------*/
 
 .contact-us {
-    width: 100vw;
+    width: 80%;
     min-width: 320px;
-    max-width: 1600px;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 4%;
     margin-bottom: 4%;
-    background-color: black;
+
     display: flex;
     padding-bottom: 5%;
     padding-top: 5%;
@@ -203,15 +208,19 @@ body {
 
 .left {
     width: 50%;
+    font-size: calc(20px + .290625vw); 
+
 }
 
 .contact-us h1, p {
     margin-left: 10%;
+    color: black;
 }
 
 .contact-us h1 {
     padding-top: 5%;
     padding-bottom: 2%;
+    width: 80%;
 }
 
 .exp {
@@ -221,12 +230,14 @@ body {
 .support {
     margin: 3% 0 .5% 10%;
     color: #808080;
+    color: black;
 }
 
 .numba {
-    font-size: calc(20px + .290625vw); 
+    font-size: calc(25px + .290625vw); 
     text-decoration: none;
     margin-bottom: 5%;
+    font-weight: 800;
 }
 
 .numba p {
@@ -238,10 +249,12 @@ body {
 .em {
     margin: 3% 0 .5% 10%;
     color: #808080;
+    color: black;
 }
 
 .dis {
     margin-bottom: 5%;
+    font-weight: 800;
 }
 
 /* FORM ---------------------------------------------------------------------------------------------------------------*/
@@ -250,6 +263,7 @@ body {
     display: flex;
     align-items: center;
     width: 50%;
+
 }
 
 form {
@@ -260,34 +274,44 @@ form {
 
 input {
     width: 80%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border: 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
     margin-bottom: 5%;
-    padding-bottom: 1%;
+    padding: 2%;
+    color: black;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+    font-size: large;
 }
 
 textarea {
     width: 80%;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border: 0;
-    border-bottom: 1px solid white;
-    padding-bottom: 5%;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 1% 5% 10% 2%;
     margin-bottom: 5%;
+    color: black;
 }
 
 button {
     width: 40%;
     border: 0;
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 2%;
+    font-size: large;
 }
 
 @media all and (max-width: 750px) {
     .contact-us {
         display: flex;
         flex-direction: column;
+        margin-bottom: 10%;
     }
 
     .left {
@@ -350,7 +374,7 @@ button {
 }
 
 .vanc {
-    font-size: calc(10px + .290625vw); 
+    font-size: calc(10px + .490625vw); 
     width: 100%;
     padding: 1%;
     display: flex;
@@ -362,7 +386,7 @@ button {
 .number {
     text-decoration: none;
     padding: 1%;
-    font-size: calc(9px + .290625vw);  
+    font-size: calc(9px + .490625vw);  
     width: 100%;
     display: flex;
     align-items: center;
@@ -401,6 +425,40 @@ button {
     }
     .vanc {
         font-size: calc(10px + .290625vw);  
+    }
+}
+
+@media all and (max-width: 450px) {
+    .navlist li {
+        font-size: calc(8px + .290625vw); 
+    }
+    .dropdown a {
+
+        font-size: calc(8px + .290625vw); 
+    }
+    #setup {
+        font-size: calc(8px + .290625vw); 
+
+    }
+}
+
+@media all and (max-width: 700px) {
+    .left h1 {
+        font-size: calc(25px + .690625vw); 
+        font-weight: 800; 
+    }
+    .exp {
+        font-size: calc(15px + .690625vw);  
+        margin-bottom: 10%;
+    }
+    .support {
+        font-size: calc(11px + .290625vw); 
+    }
+    .em {
+        font-size: calc(11px + .290625vw); 
+    }
+    #submit {
+        font-size: calc(11px + .290625vw); 
     }
 }
 
