@@ -188,6 +188,9 @@ body {
     margin-top: 4%;
     margin-bottom: 4%;
     border-radius: 10px;
+    background-image: url('pics/title.jpg');
+    background-size: cover;
+    background-position: center;
 
     box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);
     -webkit-box-shadow: 0vw .5vw 3vw .02vw rgba(0,0,0,0.7);

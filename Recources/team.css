@@ -180,11 +180,18 @@ body {
 
 /* EPICNESS -----------------------------------------------------------------------------------------------------*/
 
+.safedlight {
+    width: 70%;
+    margin-top: 3%;
+}
+
 .epicr {
     width: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,224,56,1) 100%);
-    padding: 20%;
+    display: flex;
+    justify-content: center;
+
 
 }
 
@@ -200,16 +207,21 @@ body {
 /* TEAM LAYOUT -----------------------------------------------------------------------------------------------------*/
 
 .thewrapper {
-    width: 60%;
+    width: 70%;
     margin: auto;
     margin-bottom: 15%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+
 }
 
 /* BOSS */
+
+.boss-wrapper {
+    margin: 2.5% 10%;
+}
 
 .boss-container {
     display: flex;
@@ -219,6 +231,7 @@ body {
 .boss-img {
     z-index: 2;
     position: relative;
+    width: 450px;
 }
 
 .bkg-boss {
@@ -240,13 +253,17 @@ body {
 }
 
 .boss-description h3 {
-    width: 40%;
+    width: 10%;
     color: black;
     font-size: calc(12px + .590625vw); 
     font-weight: 800;
 }
 
 /* KJ */
+
+.kj-wrapper {
+    margin: 2.5% 10%;
+}
 
 .kj-container {
     display: flex;
@@ -257,6 +274,7 @@ body {
 .kj-img {
     z-index: 2;
     position: relative;
+    width: 450px;
 }
 
 .bkg-kj {
@@ -285,7 +303,7 @@ body {
 }
 
 /* TERESA */
-
+/* 
 .teresa-container {
     display: flex;
 
@@ -320,9 +338,13 @@ body {
     color: black;
     font-size: calc(12px + .590625vw); 
     font-weight: 800;
-}
+} */
 
 /* NELLIE */
+
+.n-wrapper {
+    margin: 2.5% 10%;
+}
 
 .n-container {
     display: flex;
@@ -333,6 +355,7 @@ body {
 .n-img {
     z-index: 2;
     position: relative;
+    width: 450px;
 }
 
 .bkg-n {
@@ -362,6 +385,10 @@ body {
 
 /* DS */
 
+.ds-wrapper {
+    margin: 2.5% 10%;
+}
+
 .ds-container {
     display: flex;
 
@@ -371,6 +398,7 @@ body {
 .ds-img {
     z-index: 2;
     position: relative;
+    width: 450px;
 }
 
 .bkg-ds {
@@ -744,7 +772,7 @@ body {
 
 @media all and (max-width: 500px) {
     .thewrapper {
-        margin-right: 10%;
+        margin-right: 7%;
     }
     .boss-description h3 {
         font-size: calc(10px + .690625vw);  
