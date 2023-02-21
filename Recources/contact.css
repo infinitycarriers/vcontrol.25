@@ -307,7 +307,7 @@ button {
     font-size: large;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 1500px) {
     .contact-us {
         display: flex;
         flex-direction: column;
